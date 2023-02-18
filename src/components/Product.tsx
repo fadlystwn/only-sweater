@@ -4,6 +4,8 @@ import Box from '@mui/material/Box';
 import Grid from '@mui/material/Grid';
 import { Button, Typography } from "@mui/material";
 import ProductImage from '../images/product.png'
+import ColorOptions from "./ColorOptions";
+
 const sliderStyle = {
   margin: 'auto',
   width: '280px',
@@ -26,32 +28,32 @@ const ProductSlider = () => {
             <Box sx={sliderStyle}>
               <img src={ProductImage} alt="Product" width="280px" style={{ margin: 'auto' }} />
               <Box margin="auto" width="280px">
+                <ColorOptions />
                 <Typography>ゆったりしたセーター</Typography>
-                <Box>variant</Box>
                 <Typography>¥ 10,000</Typography>
               </Box>
             </Box>
             <Box sx={sliderStyle}>
               <img src={ProductImage} alt="Product" width="280px" style={{ margin: 'auto' }} />
               <Box margin="auto" width="280px">
+                <ColorOptions />
                 <Typography>ゆったりしたセーター</Typography>
-                <Box>variant</Box>
                 <Typography>¥ 10,000</Typography>
               </Box>
             </Box>
             <Box sx={sliderStyle}>
               <img src={ProductImage} alt="Product" width="280px" style={{ margin: 'auto' }} />
               <Box margin="auto" width="280px">
+                <ColorOptions />
                 <Typography>ゆったりしたセーター</Typography>
-                <Box>variant</Box>
                 <Typography>¥ 10,000</Typography>
               </Box>
             </Box>
             <Box sx={sliderStyle}>
               <img src={ProductImage} alt="Product" width="280px" style={{ margin: 'auto' }} />
               <Box margin="auto" width="280px">
+                <ColorOptions />
                 <Typography>ゆったりしたセーター</Typography>
-                <Box>variant</Box>
                 <Typography>¥ 10,000</Typography>
               </Box>
             </Box>
