@@ -40,8 +40,8 @@ const ContactForm = (props: Props) => {
               <InputLabel>お問合せ内容</InputLabel>
               <InputBase multiline rows="10" fullWidth sx={inputStyle} />
             </Grid>
-            <Grid item md={12} alignContent="center">
-              <Button variant="contained" >送信する</Button>
+            <Grid item md={12} textAlign="center">
+              <Button sx={{ width: "128px" }} color="secondary" variant="contained" >送信する</Button>
             </Grid>
           </Grid>
         </Grid>

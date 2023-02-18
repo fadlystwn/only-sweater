@@ -8,7 +8,7 @@ import BannerImage03 from '../images/banner/banner-image03.png';
 import Typography from "@mui/material/Typography";
 
 const backgroundLogo = {
-  width: "300px", height: "80px",
+  width: "280", height: "80px",
   backgroundImage: `url(${BannerLogo})`,
   backgroundPosition: 'center',
   backgroundSize: "cover",
@@ -17,7 +17,7 @@ const backgroundLogo = {
 }
 
 const bannerBackground01 = {
-  width: '430px',
+  width: '440px',
   height: '480px',
   backgroundImage: `url(${BannerImage01})`,
   backgroundPosition: 'center',
@@ -26,7 +26,7 @@ const bannerBackground01 = {
 
 }
 const bannerBackground02 = {
-  width: '300px',
+  width: '280px',
   height: '400px',
   backgroundImage: `url(${BannerImage02})`,
   backgroundPosition: 'center',
@@ -35,7 +35,7 @@ const bannerBackground02 = {
 
 }
 const bannerBackground03 = {
-  width: '430px',
+  width: '440px',
   height: '480px',
   backgroundImage: `url(${BannerImage03})`,
   backgroundPosition: 'center',

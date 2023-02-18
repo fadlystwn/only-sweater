@@ -1,4 +1,5 @@
 import { ThemeProvider, createTheme } from '@mui/material/styles';
+import CssBaseline from '@mui/material/CssBaseline';
 import ONLYSWEATER_THEME from './theme'
 import Header from './components/Header'
 import Banner from './components/Banner'
@@ -16,6 +17,7 @@ function App() {
   return (
     <div className="App">
       <ThemeProvider theme={theme}>
+        <CssBaseline />
         <Header />
         <Banner />
         <About />

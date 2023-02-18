@@ -4,8 +4,9 @@ import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
 import { IconButton } from '@mui/material';
-import { Facebook, Instagram } from '@mui/icons-material';
 import Logo from '../images/logo.svg'
+import InstagramIcon from '../icons/instagram.svg'
+import FacebookIcon from '../icons/facebook.svg'
 
 export default function ButtonAppBar() {
   const pages = ['About', 'Item', 'Shop', 'Info', 'Press'];
@@ -20,19 +21,20 @@ export default function ButtonAppBar() {
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
               <Button
-                color='primary'
+                variant="text"
+                color="primary"
                 key={page}
-                sx={{ my: 2, display: 'block' }}
+                sx={{ my: 2, display: 'block', textTransform: 'capitalize' }}
               >
                 {page}
               </Button>
             ))}
           </Box>
-          <IconButton aria-label="instagram">
-            <Instagram />
+          <IconButton>
+            <img src={InstagramIcon} alt="instagram" />
           </IconButton>
-          <IconButton aria-label="facebook">
-            <Facebook />
+          <IconButton>
+            <img src={FacebookIcon} alt="facebook" />
           </IconButton>
         </Toolbar>
       </AppBar>

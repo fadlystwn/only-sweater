@@ -58,7 +58,7 @@ const ProductSlider = () => {
           </Slider>
         </Grid>
         <Grid item md={12} textAlign="center">
-          <Button variant="outlined">View More</Button>
+          <Button variant="text">View More</Button>
         </Grid>
       </Grid>
     </Container>
