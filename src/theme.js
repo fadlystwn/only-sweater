@@ -19,7 +19,8 @@ const ONLYSWEATER_THEME = {
     MuiButton: {
       styleOverrides: {
         root: {
-          boxShadow: 'none'
+          boxShadow: 'none',
+
         },
         contained: {
           color: '#FFF',

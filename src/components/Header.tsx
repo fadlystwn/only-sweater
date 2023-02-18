@@ -3,7 +3,7 @@ import Box from '@mui/material/Box';
 import Toolbar from '@mui/material/Toolbar';
 import Button from '@mui/material/Button';
 import Typography from '@mui/material/Typography';
-import { IconButton } from '@mui/material';
+import { IconButton, Stack } from '@mui/material';
 import Logo from '../images/logo.svg'
 import InstagramIcon from '../icons/instagram.svg'
 import FacebookIcon from '../icons/facebook.svg'
@@ -16,7 +16,7 @@ export default function ButtonAppBar() {
         <Toolbar>
           <Box display="flex" flexGrow={1} alignItems="end">
             <img src={Logo} alt="Logo" />
-            <Typography color="inherit">We sale only sweater</Typography>
+            <Typography color="primary">We sale only sweater</Typography>
           </Box>
           <Box sx={{ display: { xs: 'none', md: 'flex' } }}>
             {pages.map((page) => (
@@ -30,12 +30,14 @@ export default function ButtonAppBar() {
               </Button>
             ))}
           </Box>
-          <IconButton>
-            <img src={InstagramIcon} alt="instagram" />
-          </IconButton>
-          <IconButton>
-            <img src={FacebookIcon} alt="facebook" />
-          </IconButton>
+          <Stack direction="row" spacing={1} marginLeft="56px">
+            <IconButton size="small">
+              <img src={InstagramIcon} alt="instagram" width="16px" />
+            </IconButton>
+            <IconButton size="small">
+              <img src={FacebookIcon} alt="facebook" width="16px" />
+            </IconButton>
+          </Stack>
         </Toolbar>
       </AppBar>
     </Box >

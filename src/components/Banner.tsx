@@ -8,7 +8,8 @@ import BannerImage03 from '../images/banner/banner-image03.png';
 import Typography from "@mui/material/Typography";
 
 const backgroundLogo = {
-  width: "280", height: "80px",
+  width: "280px",
+  height: "80px",
   backgroundImage: `url(${BannerLogo})`,
   backgroundPosition: 'center',
   backgroundSize: "cover",
