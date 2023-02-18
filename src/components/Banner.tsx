@@ -5,31 +5,61 @@ import BannerLogo from '../images/banner/banner-logo.png';
 import BannerImage01 from '../images/banner/banner-image01.png';
 import BannerImage02 from '../images/banner/banner-image02.png';
 import BannerImage03 from '../images/banner/banner-image03.png';
-import { Typography } from "@mui/material";
+import Typography from "@mui/material/Typography";
+
+const backgroundLogo = {
+  width: "300px", height: "80px",
+  backgroundImage: `url(${BannerLogo})`,
+  backgroundPosition: 'center',
+  backgroundSize: "cover",
+  marginTop: "-20px",
+  marginBottom: "20px",
+}
+
+const bannerBackground01 = {
+  width: '430px',
+  height: '480px',
+  backgroundImage: `url(${BannerImage01})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+
+}
+const bannerBackground02 = {
+  width: '300px',
+  height: '400px',
+  backgroundImage: `url(${BannerImage02})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+
+}
+const bannerBackground03 = {
+  width: '430px',
+  height: '480px',
+  backgroundImage: `url(${BannerImage03})`,
+  backgroundPosition: 'center',
+  backgroundSize: 'cover',
+  backgroundRepeat: 'no-repeat',
+
+}
 
 type Props = {}
 
 const Banner = (props: Props) => {
   return (
     <>
-      <Container>
-        <Grid container spacing={2}>
-          <Grid item xs={12} md={4}>
-            <img src={BannerImage01} alt="Banner Image 01" width="365" />
-          </Grid>
+      <Container sx={{ marginTop: "24px" }}>
+        <Grid container spacing={1}>
+          <Box sx={bannerBackground01} />
 
-          <Grid item xs={12} md={4}>
+          <Box>
             <Box display="flex" flexDirection="column" alignItems="center">
-              <img src={BannerLogo} alt="Banner Image Logo" width="160px" />
-              <img src={BannerImage02} alt="Banner Image 02" width="265px" />
+              <Box sx={backgroundLogo} />
+              <Box sx={bannerBackground02} />
             </Box>
-          </Grid>
-          <Grid item xs={12} md={4}>
-            <img src={BannerImage03} alt="Banner Image 03" width="365px" />
-          </Grid>
-
-          <Grid item xs={12} md={12}>
-          </Grid>
+          </Box>
+          <Box sx={bannerBackground03} />
         </Grid>
       </Container>
       <Box sx={{ height: "40px", backgroundColor: "secondary.main" }}>
