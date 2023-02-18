@@ -25,8 +25,8 @@ const About = () => {
             <Box sx={circleBackground}>
 
             </Box>
-            <Box sx={{ margin: "auto" }}>
-              <Typography variant="h3" marginY="64px">
+            <Box sx={{ margin: "auto", maxWidth: "480px" }}>
+              <Typography variant="h3" marginY="64px" textAlign="center">
                 About
               </Typography>
               <Typography marginBottom="16px">
