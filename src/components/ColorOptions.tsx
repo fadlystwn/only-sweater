@@ -10,13 +10,11 @@ const colorOptions = {
 }
 
 type Props = {
-  colors: string[]
+  colors: string[],
+  handleClick: (color: string) => void
 }
 
 const ColorOptions = (props: Props) => {
-  const handleClick = (color: string) => {
-    console.log()
-  }
 
   return (
     <Box display="flex" marginTop="8px">
@@ -25,7 +23,7 @@ const ColorOptions = (props: Props) => {
           <Box
             style={{ backgroundColor: color }}
             sx={colorOptions}
-            onClick={() => handleClick(color)}
+            onClick={() => props.handleClick(color)}
           />)
       })}
     </Box>
