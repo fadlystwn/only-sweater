@@ -9,13 +9,14 @@ import Grid from '@mui/material/Grid';
 import { Button, Typography } from "@mui/material";
 import ProductImage from '../images/product.png'
 import ColorOptions from "./ColorOptions";
+import TrendingFlatIcon from '@mui/icons-material/TrendingFlat';
 import { NextArrow, PrevArrow } from '../components/SliderNavigation'
 
 const product = [
-  { id: 1, name: "product01", colors: ["red", "green", "blue", "yellow"], image: ProductImage },
-  { id: 2, name: "product02", colors: ["black", "white", "gray", "silver"], image: ProductImage },
-  { id: 3, name: "product03", colors: ["purple", "pink", "orange", "brown"], image: ProductImage },
-  { id: 4, name: "product04", colors: ["navy", "teal", "maroon", "olive"], image: ProductImage }
+  { name: "product01", colors: ["#FFF", "#D9D9D9", "#B8B8B8", "#F5B05F", "#B5D3F7"], image: ProductImage },
+  { name: "product02", colors: ["black", "white", "gray", "silver", "beige"], image: ProductImage },
+  { name: "product03", colors: ["purple", "pink", "orange", "brown", "beige"], image: ProductImage },
+  { name: "product04", colors: ["navy", "teal", "maroon", "olive", "beige"], image: ProductImage }
 ]
 
 const sliderStyle = {
@@ -23,7 +24,6 @@ const sliderStyle = {
   width: '280px',
   display: 'flex',
   position: 'relative'
-
 }
 
 const settingsslickOptions = {
@@ -72,7 +72,7 @@ const ProductSlider = () => {
                     <Box margin="auto" width="280px">
                       <ColorOptions colors={item.colors} handleClick={(color: string) => handleSelectedColor(color, index)} />
                       <Typography>ゆったりしたセーター</Typography>
-                      <Typography>¥ 10,000</Typography>
+                      <Typography textAlign="right">¥ 10,000</Typography>
                     </Box>
                   </Box>
                 )
@@ -82,10 +82,10 @@ const ProductSlider = () => {
           </Slider>
         </Grid>
         <Grid item md={12} textAlign="center">
-          <Button variant="text">View More</Button>
+          <Button variant="text" endIcon={<TrendingFlatIcon />}> View More</Button>
         </Grid>
       </Grid>
-    </Container>
+    </Container >
   )
 }
 
