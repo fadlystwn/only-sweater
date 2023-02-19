@@ -5,9 +5,7 @@ import Header from './components/Header'
 import Banner from './components/Banner'
 import About from './components/About'
 import ProductSlider from './components/Product'
-
 import "slick-carousel/slick/slick.css";
-import "slick-carousel/slick/slick-theme.css";
 import ContactForm from './components/ContactForm';
 import Footer from './components/Footer';
 

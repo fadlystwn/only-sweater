@@ -4,21 +4,30 @@ const colorOptions = {
   height: "14px",
   marginRight: "4px",
   border: "1px solid #DDD",
-  backgroundColor: "#F5B05F",
-  borderRadius: "50%"
+  borderRadius: "50%",
+  cursor: 'pointer'
 
 }
 
-type Props = {}
+type Props = {
+  colors: string[]
+}
 
 const ColorOptions = (props: Props) => {
+  const handleClick = (color: string) => {
+    console.log()
+  }
+
   return (
     <Box display="flex" marginTop="8px">
-      <Box sx={colorOptions} />
-      <Box sx={colorOptions} />
-      <Box sx={colorOptions} />
-      <Box sx={colorOptions} />
-      <Box sx={colorOptions} />
+      {props.colors.map((color: string) => {
+        return (
+          <Box
+            style={{ backgroundColor: color }}
+            sx={colorOptions}
+            onClick={() => handleClick(color)}
+          />)
+      })}
     </Box>
   )
 }
