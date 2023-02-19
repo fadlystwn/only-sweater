@@ -12,10 +12,10 @@ import ColorOptions from "./ColorOptions";
 import { NextArrow, PrevArrow } from '../components/SliderNavigation'
 
 const product = [
-  { id: 1, name: "product01", colors: ["red", "green", "blue", "yellow"], image: ProductImage },
-  { id: 2, name: "product02", colors: ["black", "white", "gray", "silver"], image: ProductImage },
-  { id: 3, name: "product03", colors: ["purple", "pink", "orange", "brown"], image: ProductImage },
-  { id: 4, name: "product04", colors: ["navy", "teal", "maroon", "olive"], image: ProductImage }
+  { name: "product01", colors: ["#FFF", "#D9D9D9", "#B8B8B8", "#F5B05F", "#B5D3F7"], image: ProductImage },
+  { name: "product02", colors: ["black", "white", "gray", "silver", "beige"], image: ProductImage },
+  { name: "product03", colors: ["purple", "pink", "orange", "brown", "beige"], image: ProductImage },
+  { name: "product04", colors: ["navy", "teal", "maroon", "olive", "beige"], image: ProductImage }
 ]
 
 const sliderStyle = {
